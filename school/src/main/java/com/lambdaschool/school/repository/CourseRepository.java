@@ -13,6 +13,7 @@ public interface CourseRepository extends CrudRepository<Course, Long>
 {
     ArrayList<Course> findCoursesByCoursenameEquals(String name);
 
+
     @Modifying
     @Query(value = "DELETE FROM studcourses WHERE courseid = :courseid", nativeQuery = true)
     void deleteCourseFromStudcourses(long courseid);
