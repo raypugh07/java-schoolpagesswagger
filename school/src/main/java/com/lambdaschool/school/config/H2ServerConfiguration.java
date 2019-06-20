@@ -1,4 +1,4 @@
-package com.lambdaschool.school.config;
+/*package com.lambdaschool.school.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
@@ -35,7 +35,7 @@ public class H2ServerConfiguration
      * <p>
      * Connect to "jdbc:h2:tcp://localhost:9092/mem:testdb", username "sa", password empty.
      */
-    @Bean
+   /* @Bean
     @ConditionalOnExpression("${h2.tcp.enabled:true}")
     public Server h2TcpServer() throws SQLException
     {
@@ -47,10 +47,10 @@ public class H2ServerConfiguration
      * <p>
      * Go to http://localhost:8082 and connect to the database "jdbc:h2:mem:testdb", username "sa", password empty.
      */
-    @Bean
+  /*  @Bean
     @ConditionalOnExpression("${h2.web.enabled:true}")
     public Server h2WebServer() throws SQLException
     {
         return Server.createWebServer("-web", "-webAllowOthers", "-webPort", h2WebPort).start();
     }
-}
+}*/
